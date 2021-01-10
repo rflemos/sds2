@@ -17,10 +17,10 @@ public class Product implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	@Id
+	
 	
 	//fala que o valor sera autoincrementado pelo banco
-	
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;

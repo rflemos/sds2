@@ -30,7 +30,7 @@ public class Order {
 	private Instant moment;
 	private OrderStatus status;
 	
-	//não adimite repetições o garante a tabela de associação de muitos para muitos
+	//@ManyToMany não adimite repetições o garante a tabela de associação de muitos para muitos
 	@ManyToMany
 	//JoinColunms referencia a chave estrangeira da tabela com a classe. 
 	@JoinTable(name ="tb_order_product",
